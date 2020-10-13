@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificaLocatie">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        > <TextView
+        android:id="@+id/afisareVrificaLocatie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txtVerificaLocatie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="72dp"
+        android:text="Verifica locatie"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editScanText2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp"
+            android:maxLines="1"
+            android:hint="Cod de bare locatie"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVerificaLocatie" />
+
+        <Button
+            android:id="@+id/btnScan2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="136dp"
+            android:background="@color/trutziGreen"
+            android:text="Scan"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editScanText2" />
+
+        <Button
+        android:id="@+id/btnVerificaLocatieP"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Verificare"
+        android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScan2" />
+
+    <Button
+        android:id="@+id/btnVerificaLocatieBackMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Inapoi"
+        android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificaLocatieP" />
+
+    <Button
+        android:id="@+id/btnVerificaLocatieBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#ffffff"
+        android:text="Inapoi"
+        android:visibility="gone"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

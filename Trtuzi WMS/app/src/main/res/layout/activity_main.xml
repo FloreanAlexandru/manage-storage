@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btnLocalizare"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:background="@color/trutziGreen"
+            android:text="Localizare Reper"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMessage"
+            app:layout_constraintVertical_bias="0.14" />
+
+        <Button
+            android:id="@+id/btnScade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@color/trutziGreen"
+            android:text="Scade cantitate de pe palet"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLocalizare"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+        android:id="@+id/btnVerificarePalet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/trutziGreen"
+        android:text="Verificare Palet"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScade"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnVerificareLocatie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Verificare Locatie"
+        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificarePalet" />
+
+    <Button
+        android:id="@+id/btnAdaugarePalet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:layout_marginTop="1dp"
+        android:text="Adaugare palet pe locatie"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificareLocatie" />
+
+    <Button
+        android:id="@+id/brnMutaLocatie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/trutziGreen"
+        android:text="Muta Locatie Palet"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdaugarePalet" />
+
+    <Button
+        android:id="@+id/btnSetari"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:layout_marginTop="1dp"
+        android:text="Setari"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brnMutaLocatie" />
+
+    <Button
+        android:id="@+id/btnIesire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Iesire din aplicatie"
+        android:layout_marginTop="1dp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSetari" />
+
+
+        <TextView
+            android:id="@+id/btnWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Bine ai venit!"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="italic|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.435"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.105" />
+
+        <TextView
+        android:id="@+id/btnMessage"
+        android:layout_width="248dp"
+        android:layout_height="40dp"
+        android:text="Alege optiunea dorita"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWelcome"
+        app:layout_constraintVertical_bias="0.012"
+        android:textColor="#000000"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

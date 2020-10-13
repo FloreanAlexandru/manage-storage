@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MutaLocatiePalet">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txtMutaLocatieAfisor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtMutaLocatie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="32dp"
+            android:text="Muta locatia paletului"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTxtCodBarePalet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:layout_marginTop="108dp"
+            android:hint="Cod de bare palet"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMutaLocatie" />
+
+        <EditText
+        android:id="@+id/editTxtCodLocatieVeche"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:inputType="text"
+        android:hint="Cod locatie veche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtCodBarePalet" />
+
+        <EditText
+            android:id="@+id/editTxtCodLocatieNoua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Cod locatie noua"
+            android:inputType="text"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtCodLocatieVeche" />
+
+        <Button
+        android:id="@+id/btnScanCodPalet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="116dp"
+        android:background="@color/trutziGreen"
+        android:text="Scan cod palet"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtCodLocatieNoua" />
+
+    <Button
+        android:id="@+id/btnCodLocatieVeche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Scan cod locatie veche"
+        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScanCodPalet" />
+
+    <Button
+        android:id="@+id/btnCodLocatieNoua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/trutziGreen"
+        android:text="Scan cod locatie noua"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCodLocatieVeche" />
+
+    <Button
+        android:id="@+id/btnMutaPalet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Muta palet"
+        android:textColor="#ffffff"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCodLocatieNoua" />
+
+    <Button
+        android:id="@+id/btnMutaBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="@color/trutziGreen"
+        android:text="Inapoi"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMutaPalet" />
+
+    <Button
+        android:id="@+id/btnBackMutaPalet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/trutziGreen"
+        android:text="Scan cod palet"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
